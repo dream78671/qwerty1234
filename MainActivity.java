@@ -1,4 +1,4 @@
-package com.jeff.umar.db;
+package com.jeff.umar.pop000;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String pass = "password";
 
     public void testDB() {
-        TextView tv = (TextView)this.findViewById(R.id.Forename);
+        TextView tv = (TextView)this.findViewById(R.id.textview);
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(url, user, pass);
@@ -50,4 +50,3 @@ public class MainActivity extends AppCompatActivity {
         testDB();
     }
 }
-
